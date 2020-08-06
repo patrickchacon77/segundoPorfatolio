@@ -1,0 +1,321 @@
+/*reglas 
+selectores
+declaraciones
+proiedades
+valores */
+
+/*header{
+    background-color: hotpink !important;
+}
+*/
+/*selector de etiqueta header - secction- article -nav*/
+/*selector desendente */
+/*selector de clase . */
+/*selector de id # */
+
+body{
+    font-family:  'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;/*estilo de fuentes */
+    font-style: normal; /*tipo de fuente*/
+}
+
+h1{
+    font-size: 40px; /*tamaño de fuente */
+    line-height: 150%; /*espaciado */
+    letter-spacing: 3px; /*espaciado de letras */
+    color: white;
+    font-weight: bold;
+    margin: 0;
+   /* text-transform: uppercase; --mayusculas*/
+   /* text-decoration: darkblue;*/
+    
+}
+
+h1 strong {
+    color: teal; /*color de texto*/
+}
+
+h2{
+    color: #086fff;
+    text-transform: uppercase;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-weight: bold; /*tipo de fuente */
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+ol,/*reseter estilo ol*/
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+figure {
+    margin: 0px;
+}
+
+.hero {
+    height: auto; 
+    /*background-image: url('../images/foto.jpg');
+    background-image: url('images/foto.jpg');*/
+    background-color: #1b2127;
+    /*background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero img{
+    height: auto;
+    object-fit: cover;
+
+}
+
+
+
+.portfolio{
+    background-color: #fafafa;
+    padding: 20px;
+    
+   
+}
+.project {
+    /*border-top: 10px solid red;
+    border-left: 10px solid seagreen;
+    border-right: 10px solid seagreen;
+    border-bottom: 10px solid seagreen;*/
+    /*border-top-color: red; 
+    border-width: 15px;
+    border-style: solid;*/
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: black 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-course{
+    margin: 10px 0;
+}
+
+.project-date,
+.project-url{
+    margin: 10  0;
+}
+
+.project strong{
+    font-family:  'Source Sans Pro', sans-serif;
+    font-weight: bold; /*tipo de fuente */
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    width: 400px;
+}
+
+.header{
+    background-color: #1b2127;
+    color: seashell;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+
+}
+
+
+
+.menu {
+    height: inherit; /* . header ol herera de .menu*/
+    
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.header a{
+    color: seashell;
+    text-decoration: none;
+    height: inherit;
+
+    display: flex;
+    align-items: center; /*centrado de elementos con display flex*/
+    padding: 0 10px; /*Espacio para el menu*/
+}
+
+.footer{
+    color: white;
+    background-color: #1b2427;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer img{
+    vertical-align: middle;
+}
+
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.event{
+    /*border: 1px solid gray;*/
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0; /*logra que el elemento guarde su tamaño */
+    border-radius: 10px;
+    overflow: hidden; /*cuando un elemento se desborda del contenedor lo oculta*/
+    background-color: cornflowerblue;
+}
+
+.event-list-title{
+    padding: 20px;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover; /*redimencionar imagenes */
+    
+
+}
+
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -60px;
+    background-color: whitesmoke;
+    position: relative; /*posición del elemento */
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 1px solid black;
+    padding: 5px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+.contact{
+    background-color: cornflowerblue;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    
+}
+
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.github{
+    background-image: url('../images/github.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+    background-size: 50px 50px;
+}
+
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    padding: 10px 20px 10px 25px;
+    background-image: url(../images/envelope.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    border: white sold 1px;
+    background: transparent;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+
+}
+
+.form-email h3{
+    font-family:  'Source Sans Pro', sans-serif;
+}
+
+
+.container{
+    /*border: 1px solid red;*/
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit; /*herrerar propiedades del padre*/
+    align-items: inherit;
+    justify-content: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+    box-shadow:  rgba(32, 33, 36, 0.28) 0px 2px 20px 2px;
+
+}
