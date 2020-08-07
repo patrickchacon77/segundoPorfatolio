@@ -60,6 +60,10 @@ figure {
     margin: 0px;
 }
 
+header div{
+    box-shadow: rgb(48 138 138) 0px 1px 10px 0px;
+}
+
 .hero {
     height: auto; 
     /*background-image: url('../images/foto.jpg');
@@ -96,13 +100,13 @@ figure {
     /*border-top-color: red; 
     border-width: 15px;
     border-style: solid;*/
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
     border-radius: 10px;
     margin: 0px;
     margin-bottom: 15px;
     padding: 20px;
     background-color: white;
-    box-shadow: black 15px;
+    box-shadow:  rgba(32, 33, 36, 0.28) 0px 2px 20px 2px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -199,6 +203,7 @@ figure {
     border-radius: 10px;
     overflow: hidden; /*cuando un elemento se desborda del contenedor lo oculta*/
     background-color: cornflowerblue;
+    box-shadow:  rgba(32, 33, 36, 0.28) 0px 2px 20px 2px;
 }
 
 .event-list-title{
@@ -316,6 +321,6 @@ figure {
     justify-content: inherit;
     height: inherit;
     flex-wrap: inherit;
-    box-shadow:  rgba(32, 33, 36, 0.28) 0px 2px 20px 2px;
+
 
 }
