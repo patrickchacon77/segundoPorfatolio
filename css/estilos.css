@@ -41,7 +41,7 @@ h1 strong {
 }
 
 h2{
-    color: #086fff;
+    color:teal;
     text-transform: uppercase;
     font-family:  'Source Sans Pro', sans-serif;
     font-weight: bold; /*tipo de fuente */
@@ -61,14 +61,14 @@ figure {
 }
 
 header div{
-    box-shadow: rgb(48 138 138) 0px 1px 10px 0px;
+    /*box-shadow: rgb(48 138 138) 0px 1px 10px 0px;*/
 }
 
 .hero {
     height: auto; 
     /*background-image: url('../images/foto.jpg');
     background-image: url('images/foto.jpg');*/
-    background-color: #1b2127;
+    background-color:gray;
     /*background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;*/
@@ -202,7 +202,7 @@ header div{
     flex-shrink: 0; /*logra que el elemento guarde su tamaño */
     border-radius: 10px;
     overflow: hidden; /*cuando un elemento se desborda del contenedor lo oculta*/
-    background-color: cornflowerblue;
+    background-color:rgb(42, 42, 42);
     box-shadow:  rgba(32, 33, 36, 0.28) 0px 2px 20px 2px;
 }
 
@@ -246,7 +246,7 @@ header div{
 }
 
 .contact{
-    background-color: cornflowerblue;
+    background-color: gray;
     color: white;
     height: 150px;
     display: flex;
