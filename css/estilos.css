@@ -106,7 +106,7 @@ header div{
     margin-bottom: 15px;
     padding: 20px;
     background-color: white;
-    box-shadow:  rgba(32, 33, 36, 0.28) 0px 2px 20px 2px;
+    box-shadow:  rgba(60, 77, 128, 0.28) 0px 2px 20px 2px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -147,6 +147,7 @@ header div{
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -182,6 +183,7 @@ header div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 .footer img{
@@ -252,6 +254,7 @@ header div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -314,13 +317,14 @@ header div{
 
 .container{
     /*border: 1px solid red;*/
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit; /*herrerar propiedades del padre*/
     align-items: inherit;
     justify-content: inherit;
     height: inherit;
     flex-wrap: inherit;
+
 
 
 }
