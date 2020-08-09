@@ -324,3 +324,31 @@ header div{
 
 
 }
+/*desktop first media queries que empieze desde el mq mpas grande*/
+
+@media screen and (max-width: 1024px){
+    body{
+      
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+      
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+      
+    }
+}
+
+@media screen and (max-width: 320px){
+    body{
+      
+    }
+}
+
+
+
