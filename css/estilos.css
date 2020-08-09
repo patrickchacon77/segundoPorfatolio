@@ -318,6 +318,8 @@ header div{
 .container{
     /*border: 1px solid red;*/
     max-width: 1000px;
+    /* width: 100%; */
+    flex: 1%; 
     margin: 0 auto;
     display: inherit; /*herrerar propiedades del padre*/
     align-items: inherit;
@@ -336,10 +338,27 @@ header div{
     }
 }
 
-@media screen and (max-width: 768px){
-    body{
-      
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
     }
+    .header .logo{
+        text-align: center;
+    }  
+
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height: 42px;
+    }
+
+    .header a{
+        justify-content: center;
+    }
+
+    
 }
 
 @media screen and (max-width: 480px){
