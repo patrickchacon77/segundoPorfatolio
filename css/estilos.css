@@ -209,8 +209,8 @@ header div{
 
 .event{
     /*border: 1px solid gray;*/
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0; /*logra que el elemento guarde su tamaño */
     border-radius: 10px;
     overflow: hidden; /*cuando un elemento se desborda del contenedor lo oculta*/
@@ -400,6 +400,15 @@ header div{
     .project-description{
         font-size: .8em;
     }
+
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px){
@@ -409,6 +418,11 @@ header div{
     .project-details{
         font-size: 12px;
 
+    }
+
+    .event-detail{
+        margin: -2em  .5em .5em;
+        padding: 1em;
     }
 }
 
