@@ -434,7 +434,7 @@ header div{
 
     .menu{
         position: fixed;
-        background: -webkit-radial-gradient(center,ellipse, rgba(91, 111, 134, 0.945) 5%, rgba(30, 144, 144, 0.959) 90%);
+        background:  rgba(29, 87, 97, 0.945);
         z-index: 3;
         top: 0px;
         left: -100vw; /* transición -100 para que se oculte*/
