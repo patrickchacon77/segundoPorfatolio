@@ -346,9 +346,41 @@ header div{
     .container{
         padding: 0 1em;
     }
+    .hero{
+        height: auto;
+        position: relative;
+        overflow:hidden;
+        padding: 2em;
+    }
+    .hero img{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        
+
+    }
+    h1{
+        font-size: 2em;
+        z-index: 2;
+        text-shadow: 1px 2px 2px#000;
+    }
 }
 
 @media screen and (max-width: 767px){
+    .hero{
+        background-color: black;
+    }
+
+    .hero img{
+        filter: opacity(80%) ;
+    }
+
+    
+    
     .header{
         display: block;
         height: auto;
@@ -412,9 +444,14 @@ header div{
 }
 
 @media screen and (max-width: 481px){
-    body{
-      
+    h1{
+        font-size: 1.5em;
+        
     }
+    .hero{
+        padding: 2em;
+    }
+
     .project-details{
         font-size: 12px;
 
@@ -445,8 +482,8 @@ header div{
 }
 
 @media screen and (max-width: 320px){
-    body{
-      
+    h1{
+      font-size: 1.2em;
     }
 }
 
