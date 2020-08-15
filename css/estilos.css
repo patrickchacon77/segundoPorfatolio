@@ -13,6 +13,40 @@ valores */
 /*selector de clase . */
 /*selector de id # */
 
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?z3b12l');
+    src:  url('../fonts/icomoon.eot?z3b12l#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?z3b12l') format('truetype'),
+      url('../fonts/icomoon.woff?z3b12l') format('woff'),
+      url('../fonts/icomoon.svg?z3b12l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+  
+
+
 body{
     font-family:  'Source Sans Pro', sans-serif;
     margin: 0;
@@ -336,9 +370,23 @@ header div{
     justify-content: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
 
-
-
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50% ;
+    background-color: rgba(0, 0, 0, 0.651);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: rgb(20, 199, 216);
+    font-size: 26px;
+    border: 5px sold white;
 }
 /*desktop first media queries que empieze desde el mq mpas grande*/
 
@@ -370,13 +418,36 @@ header div{
     }
 }
 
+
 @media screen and (max-width: 767px){
+    .burger-button{
+        display: block;
+    }
+
     .hero{
         background-color: black;
     }
 
     .hero img{
         filter: opacity(80%) ;
+    }
+
+    .menu{
+        position: fixed;
+        background: -webkit-radial-gradient(center,ellipse, rgba(91, 111, 134, 0.945) 5%, rgba(30, 144, 144, 0.959) 90%);
+        z-index: 3;
+        top: 0px;
+        left: -100vw; /* transición -100 para que se oculte*/
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s; /* transición*/
+        
+    }
+    .menu.is-active{
+        left:0; /* transición para que salga*/
     }
 
     
@@ -398,6 +469,11 @@ header div{
 
     .header a{
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+
+
     }
 
     .project{
