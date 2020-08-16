@@ -71,7 +71,7 @@ h1{
 }
 
 h1 strong {
-    color: rgb(0, 255, 255); /*color de texto*/
+    color: rgb(7, 124, 124); /*color de texto*/
 }
 
 h2{
@@ -434,9 +434,9 @@ header div{
         background-color: black;
     }
 
-    .hero img{
+   /*  .hero img{
         filter: opacity(80%) ;
-    }
+    } */
 
     .menu{
         position: fixed;
