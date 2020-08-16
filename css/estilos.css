@@ -37,7 +37,7 @@ h1{
 }
 
 h1 strong {
-    color: teal; /*color de texto*/
+    color: rgb(0, 255, 255); /*color de texto*/
 }
 
 h2{
@@ -68,7 +68,7 @@ header div{
     height: auto; 
     /*background-image: url('../images/foto.jpg');
     background-image: url('images/foto.jpg');*/
-    background-color:gray;
+    background-image: linear-gradient(#156a80, #00fffa, #156a80);
     /*background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;*/
@@ -248,7 +248,7 @@ header div{
 }
 
 .contact{
-    background-color: gray;
+    background-image: linear-gradient(#113a44 ,#00fffa);
     color: white;
     height: 150px;
     display: flex;
