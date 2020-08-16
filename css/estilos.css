@@ -13,6 +13,40 @@ valores */
 /*selector de clase . */
 /*selector de id # */
 
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?z3b12l');
+    src:  url('../fonts/icomoon.eot?z3b12l#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?z3b12l') format('truetype'),
+      url('../fonts/icomoon.woff?z3b12l') format('woff'),
+      url('../fonts/icomoon.svg?z3b12l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+  
+
+
 body{
     font-family:  'Source Sans Pro', sans-serif;
     margin: 0;
@@ -137,8 +171,18 @@ header div{
 }
 
 .project-details {
-    width: 400px;
+    width:50%;
 }
+
+.project-imageContainer{
+    width: 50%;
+}
+
+.project-imageContainer img{
+    max-width: 100%;
+
+}
+
 
 .header{
     background-color: #1b2127;
@@ -199,8 +243,8 @@ header div{
 
 .event{
     /*border: 1px solid gray;*/
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0; /*logra que el elemento guarde su tamaño */
     border-radius: 10px;
     overflow: hidden; /*cuando un elemento se desborda del contenedor lo oculta*/
@@ -326,19 +370,94 @@ header div{
     justify-content: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
 
-
-
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50% ;
+    background-color: rgba(0, 0, 0, 0.651);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: rgb(20, 199, 216);
+    font-size: 26px;
+    border: 5px sold white;
 }
 /*desktop first media queries que empieze desde el mq mpas grande*/
 
-@media screen and (max-width: 1024px){
-    body{
-      
+@media screen and (max-width: 1023px){
+    .container{
+        padding: 0 1em;
+    }
+    .hero{
+        height: auto;
+        position: relative;
+        overflow:hidden;
+        padding: 2em;
+    }
+    .hero img{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        
+
+    }
+    h1{
+        font-size: 2em;
+        z-index: 2;
+        text-shadow: 1px 2px 2px#000;
     }
 }
 
+
 @media screen and (max-width: 767px){
+
+    h2{
+        font-size: 1.4em;
+        margin: .5em 0;
+    }
+
+    .burger-button{
+        display: block;
+    }
+
+    .hero{
+        background-color: black;
+    }
+
+    .hero img{
+        filter: opacity(80%) ;
+    }
+
+    .menu{
+        position: fixed;
+        background:  rgba(29, 87, 97, 0.945);
+        z-index: 3;
+        top: 0px;
+        left: -100vw; /* transición -100 para que se oculte*/
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s; /* transición*/
+        
+    }
+    .menu.is-active{
+        left:0; /* transición para que salga*/
+    }
+
+    
+    
     .header{
         display: block;
         height: auto;
@@ -356,20 +475,102 @@ header div{
 
     .header a{
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+
+
     }
 
-    
+    .project{
+        display: block;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+/*     .project-details{
+        width: auto;
+        font-size: 16px;
+
+    } */
+
+    .project-course, .project-date, .project-url{
+        margin: 0.3em 0;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 0.8em;
+    }
+    .project-course{
+        font-size: 0.7em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: 1em;
+    }
+
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px){
-    body{
-      
+    h1{
+        font-size: 1.5em;
+        
+    }
+    .hero{
+        padding: 2em;
+    }
+
+    .project-details{
+        font-size: 14px;
+
+    }
+
+    .event-detail{
+        margin: -2em  .5em .5em;
+        padding: 1em;
+    }
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button{
+        margin: 1em auto;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px sold transparent;
+    }
+    .footer p{
+        padding: 0px;
+        margin: 0px;
+    }
+    .social-link{
+        width: 40px;
+        height: 40px; 
+        background-size: 100%;
     }
 }
 
 @media screen and (max-width: 320px){
-    body{
-      
+    h1{
+      font-size: 1.2em;
     }
 }
 
